@@ -1,0 +1,8 @@
+BOOK TWO — READ TO ME UPDATE
+
+Upload all files and folders to your Book Two GitHub Pages repository, replacing matching files.
+No Book Two audio files were supplied, so this package has no MP3 recordings yet.
+Add each new recording to the audio folder as page-01.mp3 through page-50.mp3.
+Read to Me automatically advances after a recording ends; it stops at the first missing recording.
+Play recordings online once to save them for offline playback.
+Open the site online after deploying to allow the updated service worker to install.
