@@ -25,3 +25,6 @@ h1{font-size:clamp(37px,4.1vw,59px);line-height:1.12;letter-spacing:-1.5px}.cove
 .read-to-me-hint{font-size:.9rem;flex:1 1 180px}
 .auto-turn{padding:12px 14px;background:rgba(25,126,131,.09);border:1px solid #16888e;border-radius:10px;margin-top:14px}
 .auto-turn strong{font-size:1rem}
+
+/* Book Two: narration at top, matching Book One */
+#reader > .narration{margin:8px auto 18px;background:rgba(140,170,160,.09);border:1px solid rgba(90,110,110,.3)}
