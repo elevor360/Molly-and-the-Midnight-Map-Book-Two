@@ -1,6 +1,6 @@
 'use strict';
 const PREFIX='molly-midnight-book-two-'+self.registration.scope;
-const CACHE=PREFIX+'v1.1.0-read-to-me';
+const CACHE=PREFIX+'v1.2.0-matched-book-one';
 const FILES=["./", "index.html", "styles.css", "app.js", "story-data.js", "story.txt", "manifest.webmanifest", "assets/cover.webp", "assets/scene-1.webp", "assets/scene-2.webp", "assets/scene-3.webp", "assets/scene-4.webp", "assets/scene-5.webp", "assets/scene-6.webp", "assets/scene-7.webp", "assets/icon-192.png", "assets/icon-512.png"];
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(FILES);await self.skipWaiting();})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const name of await caches.keys())if(name.startsWith(PREFIX)&&name!==CACHE)await caches.delete(name);await self.clients.claim();for(const client of await self.clients.matchAll())client.postMessage({type:'BOOK_CACHED'});})()));
