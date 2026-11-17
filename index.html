@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#153c2d"><meta name="description" content="Follow Molly, a rainbow-haired Yorkshire terrier, into an enchanted wood in this illustrated fantasy adventure from Elevor360D. Install for offline reading.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="assets/icon-192.png"><link rel="apple-touch-icon" href="assets/icon-192.png">
+<title>Molly and the Midnight Map — Book Two: The Lighthouse Beyond the Tide · Elevor360D</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="./" id="homeLink">ELEVOR360D <span>STORY LIBRARY / BOOK TWO</span></a><button id="install" class="install">Install book</button></header>
+<main>
+<section id="coverScreen" class="cover-screen" aria-labelledby="bookTitle">
+ <div class="cover-art"><img src="assets/cover.webp" alt="Molly, a rainbow-haired Yorkshire terrier in pink sunglasses, and Pip the mouse beside a glowing moonflower arch." width="768" height="340"><div class="cover-label">AN ORIGINAL FANTASY ADVENTURE</div></div>
+ <div class="intro"><p class="eyebrow">PEACE, LOVE & A LITTLE MAGIC</p><h1 id="bookTitle">Molly and the<br><em>Midnight Map</em><br>Book Two</h1><p class="deck">One little dog. One mysterious sea.<br>A lighthouse that has lost its way.</p><p class="synopsis">Molly and Pip follow a message through the black door to a magical sea. Can they find Alder and help the lighthouse shine the right way again?</p><div class="facts"><span>50 story pages</span><span>10 chapters</span><span>Illustrated</span></div><div class="cover-actions"><button id="begin" class="primary">Begin reading <span aria-hidden="true">↗</span></button><button id="continue" hidden>Continue reading</button></div><p class="fine">A warm, funny adventure about friendship, belonging and a different kind of bravery.</p><p id="offlineStatus" class="status" role="status">Preparing offline reading…</p><a class="store-link" href="https://elevor360d.co.uk/" target="_blank" rel="noopener">Visit the Elevor360D app store ↗</a></div>
+</section>
+<section id="reader" hidden aria-label="Book reader">
+ <div class="reader-tools"><button id="contentsButton" aria-expanded="false" aria-controls="contents">☰ <span>Chapters</span></button><div class="text-tools"><button id="smaller" aria-label="Decrease text size">A−</button><button id="larger" aria-label="Increase text size">A+</button><button id="theme" aria-label="Change reading theme">Theme</button><button id="bookmark" aria-pressed="false">Bookmark</button></div></div>
+ <nav id="contents" hidden aria-label="Chapters"><h2>Contents</h2><ol id="chapterList"></ol><div id="savedMarks"></div></nav>
+ <article id="page" tabindex="-1" aria-labelledby="pageHeading"></article>
+ <div class="page-bottom"><p id="pageMeta" aria-live="polite"></p><progress id="progress" max="50" value="1" aria-label="Reading progress"></progress><div class="page-nav"><button id="previous">← Previous</button><label class="jump">Page <input id="pageNumber" type="number" min="1" max="50" inputmode="numeric" aria-label="Go to page"> of 50</label><button id="goPage" aria-label="Go to selected page">Go</button><button id="next">Next →</button></div><p class="reader-note">Your place is saved on this device.</p></div>
+</section>
+</main>
+<dialog id="installHelp"><form method="dialog"><button class="close" aria-label="Close installation instructions">×</button><p class="eyebrow">TAKE THE STORY WITH YOU</p><h2>Install this book</h2><p id="installMessage">On Android, open this page in Chrome, then use the browser menu and choose <strong>Install app</strong> or <strong>Add to Home screen</strong>. On iPhone or iPad, open it in Safari, tap Share, then <strong>Add to Home Screen</strong>. On desktop Chrome or Edge, look for the install icon in the address bar or browser menu.</p><p>Open the book online once and wait for “Available offline” before disconnecting. Installing does not require an account.</p><button class="primary">Got it</button></form></dialog>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="story-data.js"></script><script src="app.js"></script>
+</body></html>
